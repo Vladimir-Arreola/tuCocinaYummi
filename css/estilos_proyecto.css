@@ -107,6 +107,7 @@ header{
     width: 95%;
     height: auto;
     margin: 30px auto;
+    display: flex;
 }
 
 .btn-chico{
@@ -151,19 +152,58 @@ header{
 
 
 .recetas{
-    display: inline-block;
     font-family: texto;
-    width: 80%;
-    vertical-align: top;
+    width: 100%;
+    display: block;
 }
+
+@media(min-width:1200px){
+    .recetas{
+        font-family: texto;
+    }
+} 
+
+.recetas-grid{
+    margin: 0 auto;
+    width: 99%;
+}
+
+@media(min-width:768px){
+    .recetas-grid{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media(min-width:1200px){
+    .recetas-grid{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+} 
+
 .receta-individual{
     background-color: rgb(236, 236, 236);
     padding: 10px;
-    width: 30%;
-    height: 300px;
-    display: inline-block;
-    margin-top: 10px;
-    vertical-align: top;
+    width: 95%;
+    margin-top: 10px; 
+    display: block;
+}
+
+@media(min-width:768px){
+    .receta-individual{
+        height: auto;
+        width: 90%;
+    }
+}
+
+@media(min-width:1200px){
+    .receta-individual{
+        width: 90%;
+        height: 300px;
+        display: inline-block;
+        vertical-align: top;
+    }
 }
 
 
