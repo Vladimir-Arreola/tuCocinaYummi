@@ -1,0 +1,402 @@
+@font-face {
+    font-family: encabezados;
+    src: url(../fuentes/Oswald-Bold.ttf);
+}
+
+@font-face {
+    font-family: texto;
+    src: url(../fuentes/Oswald-Regular.ttf);
+}
+
+body{
+    background-color: rgb(252, 248, 248);
+    width: 100%;
+}
+
+header{
+    background: rgba(199, 199, 199, 0.829);
+    background-image: url(../imagenes/logo.jpg);  
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    width: 100%;
+    margin: 0auto;
+    font-family: encabezados;
+    color: white;
+    font-size: 35px;
+    text-align: center;
+}
+
+
+.head_content{
+    background: rgba(0, 0, 0, 0.75);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.head_textos{
+    margin-top: 9%;
+}
+
+.head_parrafos{
+    font-family: texto;
+    font-size: 40px;
+}
+
+.barrita{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.navBar{
+    background: rgb(20, 20, 20) ;
+    min-height: 50px;
+    padding: 25px 10px 5px 10px;
+    position: relative;
+}
+
+#primer_link{
+    margin-left: 15px;
+}
+.links{
+    color: #fff;
+    text-decoration: none;
+    font-family: texto;
+    font-size: 20px;
+    padding: 10px 15px 10px 15px;
+    background-color: rgba(27, 27, 27, 0.644);
+    border-radius: 3px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(15, 15, 15);
+    vertical-align: top;
+}
+
+
+
+.links:hover{
+    opacity: 0.70;
+}
+
+*{
+    margin: 0;
+}
+
+.btn{
+    opacity: 0.99;
+    background: linear-gradient(to bottom, rgb(231, 65, 24), rgb(175, 42, 19) 50%, rgb(175, 53, 23) 100%);
+    padding: 10px 30px 10px 30px;
+    border-radius: 3px;
+    color: white;
+    text-decoration: none;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(136, 50, 0);
+    font-family: encabezados;
+    font-size: 21px;
+}
+
+.btn:hover{
+    opacity: 0.9;
+}
+
+.principal{
+    width: 95%;
+    height: auto;
+    margin: 30px auto;
+}
+
+.btn-chico{
+    padding: 5px 10px;
+}
+
+.barra_lateral{
+    width: 18%;
+    height: auto;
+    font-family: texto;
+    font-size: 20px;
+    border-right: 1px solid black;
+    display: inline-block;
+    padding-bottom: 30px;
+    padding-right: 15px;
+}
+
+
+.contacto{
+    width: 90%;
+    margin: 0 auto 35px auto;
+}
+
+.redes{
+    margin-top: 10px;
+    height: 65px;
+    width: 65px;
+}
+
+.textos_noticias{
+    font-size: medium;
+    margin-bottom: 5px;
+}
+
+.titulo_noticias{
+    color: rgb(247, 37, 0);
+    font-size: 16px;
+    margin-bottom: 5px;
+    margin-top: 15px;
+}
+
+
+
+.recetas{
+    display: inline-block;
+    font-family: texto;
+    width: 80%;
+    vertical-align: top;
+}
+.receta-individual{
+    background-color: rgb(236, 236, 236);
+    padding: 10px;
+    width: 30%;
+    height: 300px;
+    display: inline-block;
+    margin-top: 10px;
+    vertical-align: top;
+}
+
+
+.descripcion_parrafo{
+    margin-bottom: 10px;
+}
+
+
+.noticia_link{
+    color: rgb(247, 37, 0);
+    font-size: medium;
+}
+
+.foto_receta{
+    height: 100px;
+    width: 150px;
+    display: inline;
+}
+
+.titulo_receta{
+    display: inline-block;
+}
+
+.titulo_blog{
+    margin-top: 20px;
+    font-size: 35px;
+}
+
+.texto_blog{
+    width: 95%;
+    display: inline-block;
+}
+
+
+.imagen_blog{
+    height: 250px;
+    width: 380px;
+    float: right;
+    margin-left: 10px;
+}
+
+.img_blog{
+    display: inline;
+}
+
+.pie_pagina{
+    height: 100px;
+    background: rgb(20, 20, 20) ;
+    color: white;
+    text-align: center;
+    line-height: 100px;
+}
+
+.imagen_apoyo{
+    height: 300px;
+    width: 500px;
+    float: right;
+    margin-top: 60px;
+}
+
+.encabezado_apoyo{
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.receta_grande{
+    width: 100%;
+}
+
+.multimedias{
+    margin: 30px auto 0px auto;
+    width: fit-content;
+    width: 50%;
+}
+
+video{
+    margin: 0 auto;
+    width: 100%;
+}
+
+.productos{
+    height: auto;
+    width: 95%;
+    margin: 20px auto 0 auto;
+    display: block;
+}
+
+.image_producto{
+    height: 380px;
+    width: 270px;
+    margin-right: 15px;
+}
+
+
+.info_producto{
+    margin-left: 10px;
+    width: 70%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.info_texto_producto{
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.nombre_producto{
+    font-size: 30px;
+}
+
+.historia_producto{
+    margin-bottom: 100px;
+}
+
+.producto_individual{
+    display: block;
+}
+
+.detalle_producto{
+    display: inline-block;
+    font-size: 20px;
+}
+
+ul{
+    list-style: none;
+}
+
+.btn_producto{
+    float: right;
+    margin: 30px 0 0 0;
+}
+
+.mapa{
+    width: 50%;
+    margin: 30px auto 0 auto;
+}
+
+.formulario_contacto{
+    font-size: 20px;
+    width: 60%;
+    margin: 30px auto 0 auto;
+    text-align: center;
+}
+
+.titulo_campo{
+    font-size: 26px;
+    margin-bottom: 10px;
+}
+
+.input_text{
+    width: 600px;
+    height: 25px;
+    font-family: texto;
+    font-size: 20px;
+}
+
+.radios, .checks{
+    margin-right: 10px;
+    height: 20px;
+}
+
+.select_edad{
+    width: 600px;
+    height: 30px;
+    font-family: texto;
+    font-size: 18px;
+    color: rgb(70, 70, 70);
+    background-color: white;
+    border: 1px solid gray;
+}
+
+.margen{
+    padding: 30px 20px 40px 20px;
+}
+
+.contaxultra{
+font-family: texto;
+display: inline-block;
+font-size: 50px;
+vertical-align: top;
+color: rgb(247, 37, 0);
+}
+
+.barra_productos{
+    width: 95%;
+    background: rgb(20, 20, 20) ;
+    padding: 5px 0;
+    float: right;
+    text-align: center;
+}
+
+#carro{
+    height: 80px;
+}
+
+#boton_formulario{
+    cursor: pointer;
+    vertical-align: top;
+    margin-top: -11px;
+}
+
+.caja_menu{
+    
+    display: inline-block;
+    vertical-align: top;
+
+    
+}
+
+#menu{
+    width: 100%;
+    margin-top: 12px;
+    margin-bottom: 15px; 
+}
+
+
+
+.centrar{
+    
+    margin: 0 auto;
+}
+
+.link_desplegable{
+   margin: 0 1px;
+   font-size: 16px;
+}
+
+.select_fecha{
+    height: 35px;
+    width: 200px;
+    font-family: texto;
+    font-size: 18px;
+    color: rgb(70, 70, 70);
+    background-color: white;
+    border: 1px solid gray;
+}

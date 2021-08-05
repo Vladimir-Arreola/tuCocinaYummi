@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/estilos_proyecto.css">
+    <title>Sanchez Proyecto Final</title>
+</head>
+<body>
+    <nav class="navBar">
+        <a href="../index.html" class="btn">Inicio</a>
+        <a href="quienessomos.html" class="links" id="primer_link">Quienes Somos?</a>
+        <a href="misionyvision.html" class="links">Mision y Vision</a>
+        <a href="servicios.html" class="links">Nuestros Servicios</a>
+        <a href="productos.html" class="links">Nuestros Productos</a>
+        <a href="ubicacion.html" class="links">Ubicación</a>
+        <a href="" class="links">Contacto</a>
+        <div class="caja_menu">
+            <button class="links" id="boton_formulario"  onclick="return MostrarFormularios('');" >
+                Formularios
+            </button>
+            <div class="menu" id="menu">  
+            </div>
+        </div>
+    </nav>
+
+    <header>
+        <div class="head_content">
+            <div class="head_textos">
+                <h1>Yummi</h1>
+                <hr class="barrita">
+                <p class="head_parrafos">Disfruta de las mejores recetas</p>
+            </div>
+        </div>
+    </header>
+
+    <div class="principal">
+        
+        <div class="recetas receta_grande">
+            <h1 class="encabezado_apoyo">Contacto</h1>
+
+            <form action="" class="formulario_contacto">
+                <fieldset class="margen">
+
+                <p class="titulo_campo" id="identifica_nombre">Nombre</p>
+                <input type="text" name="" id="nombre" class="input_text" placeholder="Tu nombre">
+
+                <br><br>
+
+                <p class="titulo_campo" id="identifica_sexo">Sexo:</p>
+
+                <input class="radios" type="radio" name="genero" id="hombre" value="H">Hombre
+
+                <input class="radios" type="radio" name="genero" id="mujer" value="M">Mujer
+
+                <br><br>
+
+                <p class="titulo_campo" id="identificar_edades">Edad:</p>
+
+                <select name="" id="selec_edades" class="select_edad" onclick="Edad();">
+                    <option value="0">Seleccione su edad</option>
+                </select>
+
+                <br><br>
+
+                <p class="titulo_campo" id="identificar_noticias">Noticias que le interesen:</p>
+
+                <input class="checks" type="checkbox" name="noticias" id="formula1">Formula 1 
+                <br>
+                <input class="checks" type="checkbox" name="noticias" id="ciclismo">Ciclismo 
+                <br>
+                <input class="checks" type="checkbox" name="noticias" id="videojuegos">Videojuegos <br>
+                <input class="checks" type="checkbox" name="noticias" id="motocross">Motocross
+                <br>
+                <input class="checks" type="checkbox" name="noticias" id="twitch">Twitch
+                <br>
+                <input class="checks" type="checkbox" name="noticias" id="series">Series de Tv
+                <br><br>
+                <a href="index.html" class="btn btn-chico" onclick="return Validar();">Guardar</a>
+           
+            </fieldset>
+            </form>
+
+        </div>
+       
+    </div>
+    <footer class="pie_pagina">
+        <p>Copyright © 2021. Todos los derechos reservados by Sanchez Sandoval</p>
+    </footer>
+    <script src="../javascript/valida_contacto_directo.js"></script>
+</body>
+</html>

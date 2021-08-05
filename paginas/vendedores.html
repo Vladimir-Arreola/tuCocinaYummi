@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/estilos_proyecto.css">
+    <title>Sanchez Proyecto Final</title>
+</head>
+<body>
+    <nav class="navBar">
+        <a href="../index.html" class="btn">Inicio</a>
+        <a href="quienessomos.html" class="links" id="primer_link">Quienes Somos?</a>
+        <a href="misionyvision.html" class="links">Mision y Vision</a>
+        <a href="servicios.html" class="links">Nuestros Servicios</a>
+        <a href="productos.html" class="links">Nuestros Productos</a>
+        <a href="ubicacion.html" class="links">Ubicación</a>
+        <a href="" class="links">Contacto</a>
+
+        <div class="caja_menu">
+            <button class="links" id="boton_formulario"  onclick="return MostrarFormularios('');" >
+                Formularios
+            </button>
+            <div class="menu" id="menu">  
+            </div>
+        </div>
+    </nav>
+
+    <header>
+        <div class="head_content">
+            <div class="head_textos">
+                <h1>Yummi</h1>
+                <hr class="barrita">
+                <p class="head_parrafos">Disfruta de las mejores recetas</p>
+            </div>
+        </div>
+    </header>
+
+    <div class="principal">
+        
+        <div class="recetas receta_grande">
+            <h1 class="encabezado_apoyo">Vendedor</h1>
+
+            <form action="" class="formulario_contacto">
+                <fieldset class="margen">
+
+                <p class="titulo_campo" id="identificar_id">ID:</p>
+                <input type="text" name="" id="identify" class="input_text"><br><br>
+
+                <p class="titulo_campo" id="identificar_nombre">Nombre:</p>
+                <input type="text" name="" id="nombre" class="input_text"><br><br>
+
+                <p class="titulo_campo" id="identificar_apellido">Apellido Paterno:</p>
+                <input type="text" name="" id="apellido" class="input_text"><br><br>
+
+                <p class="titulo_campo" id="identificar_apellidoMaterno">Apellido Materno:</p>
+                <input type="text" name="" id="apellidoMaterno" class="input_text"><br><br>
+
+                <p class="titulo_campo" id="identificar_fecha">Fecha de Nacimiento:</p>
+
+                <select name="fecha" id="selecc_dias" class="select_fecha" onclick="return Dias();">
+                    <option value="0">Día</option>
+                </select>
+
+                <select name="fecha" id="selecc_meses" class="select_fecha" onclick="return Meses();">
+                    <option value="0">Mes</option>
+                </select>
+
+                <select name="fecha" id="selecc_year" class="select_fecha" onclick="return Years();">
+                    <option value="0">Año</option>
+                </select>
+
+                <br><br>
+
+                <a href="index.html" class="btn btn-chico" onclick="return ValidarVendedor();">Guardar</a>
+           
+            </fieldset>
+            </form>
+
+        </div>
+       
+    </div>
+    <footer class="pie_pagina">
+        <p>Copyright © 2021. Todos los derechos reservados by Sanchez Sandoval</p>
+    </footer>
+    <script src="../javascript/valida_contacto_directo.js"></script>
+    <script src="../javascript/valida_vendedores.js"></script>
+</body>
+</html>
